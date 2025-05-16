@@ -25,8 +25,8 @@ export default class MovieFormView extends AbstractComponent {
 
           <fieldset>
             <legend>Статус фильма:</legend>
-            <label><input type="radio" name="movie-status" value="Planned" required /> Запланировано</label>
-            <label><input type="radio" name="movie-status" value="Completed" required /> Выполнено</label>
+            <label><input type="radio" name="movie-status" value="Planned" required /> Хочу посмотреть</label>
+            <label><input type="radio" name="movie-status" value="Completed" required /> Просмотрено</label>
           </fieldset>
 
           <button type="submit">Добавить фильм</button>

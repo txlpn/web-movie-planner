@@ -12,18 +12,17 @@ export default class MovieEditFormView extends AbstractComponent {
 	}
 
 	get template() {
-		const { place, date, note, status } = this.#movie
+		const { place, note, status } = this.#movie
 
 		return `
       <form class="movie-edit-form">
         <input type="text" name="place" value="${place}" required />
-        <input type="date" name="date" value="${date}" required />
         <textarea name="note" rows="2">${note}</textarea>
 
         <select name="status">
           <option value="Planned" ${
 			status === 'planned' ? 'selected' : ''
-		}>Запланировано</option>
+		}>Хочу посмотреть</option>
           <option value="Completed" ${
 			status === 'completed' ? 'selected' : ''
 		}>Завершено</option>
@@ -41,7 +40,6 @@ export default class MovieEditFormView extends AbstractComponent {
 		const updatedMovie = {
 			...this.#movie,
 			place: form.place.value.trim(),
-			date: form.date.value,
 			note: form.note.value.trim(),
 			status: form.status.value,
 		}

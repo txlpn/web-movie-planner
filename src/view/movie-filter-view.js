@@ -18,8 +18,8 @@ export default class MovieFilterView extends AbstractComponent {
         <label for="status-filter">Фильтр по статусу:</label>
         <select id="status-filter">
           <option value="">Все</option>
-          <option value="planned">Запланировано</option>
-          <option value="completed">Выполнено</option>
+          <option value="planned">Хочу посмотреть</option>
+          <option value="completed">Просмотрено</option>
         </select>
       </div>
     `
