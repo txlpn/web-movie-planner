@@ -1,0 +1,228 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+.movie-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.movie-form label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #555555;
+}
+
+.movie-form input[type="text"],
+.movie-form textarea,
+.movie-form input[type="date"] {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.movie-form textarea {
+    resize: vertical;
+    min-height: 60px;
+}
+
+.movie-form fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.movie-form legend {
+    font-weight: 500;
+    color: #555555;
+    margin-bottom: 5px;
+}
+
+.movie-form label.radio-label {
+    font-weight: 400;
+    margin-right: 10px;
+    color: #555555;
+}
+
+.movie-form button {
+    padding: 12px;
+    background-color: #ff6f61;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.movie-form button:hover {
+    background-color: #e65b50;
+}
+
+/* Фильтр */
+.movie-filter {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.movie-filter label {
+    font-weight: 500;
+    color: #555555;
+}
+
+.movie-filter input[type="date"],
+.movie-filter select {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.movie-filter select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="%23999" viewBox="0 0 16 16"><path d="M4 6l4 4 4-4"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+}
+
+.movie-filter button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.movie-filter button:hover {
+    background-color: #0056b3;
+}
+
+.movie-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.movie-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #e9ecef;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.movie-item h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333333;
+}
+
+.movie-item p {
+    margin: 0;
+    color: #555555;
+}
+
+.movie-item button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #007bff;
+    font-size: 1em;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.movie-item button:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.movie-item .movie-delete-button {
+    color: #ff6f61;
+}
+
+.movie-item .movie-delete-button:hover {
+    background-color: #ff6f61;
+    color: #ffffff;
+}
+
+.movie-edit-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.movie-edit-form label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #555555;
+}
+
+.movie-edit-form input[type="text"],
+.movie-edit-form textarea,
+.movie-edit-form input[type="date"] {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.movie-edit-form textarea {
+    resize: vertical;
+    min-height: 60px;
+}
+
+.movie-edit-form button {
+    padding: 12px;
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.movie-edit-form button:hover {
+    background-color: #218838;
+}
